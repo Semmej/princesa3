@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você, Minha Princesa</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS';
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff7f7f;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #333;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0px 0;
+            line-height: 1.6;
+        }
+        .galeria {
+            position: relative;
+            width: 90%;
+            height: 80vh;
+            margin-top: -100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .foto {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 10px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform-origin: center center;
+            transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+        }
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Ajustando posições das fotos mais espalhadas e com mais distância */
+        .foto:nth-child(1) { top: -50%; left: 5%; transform: rotate(-5deg); }
+        .foto:nth-child(2) { top: -50%; left: 80%; transform: rotate(10deg); }
+        .foto:nth-child(3) { top: 35%; left: 40%; transform: rotate(-8deg); }
+        .foto:nth-child(4) { top: 20%; left: 10%; transform: rotate(12deg); }
+        .foto:nth-child(5) { top: 20%; right: 5%; transform: rotate(-10deg); }
+        .foto:nth-child(6) { bottom: 10%; left: 55%; transform: rotate(6deg); }
+        .foto:nth-child(7) { bottom: 15%; right: 30%; transform: rotate(-4deg); }
+
+        .foto:hover {
+            transform: scale(1.1) rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cinco fotos, mil sentimentos, e uma história só nossa.</h1>
+    
+    <p>Desde o momento em que nossos caminhos se cruzaram, minha vida ganhou um novo significado. Cada sorriso, cada olhar, cada palavra sua é como uma melodia que toca diretamente meu coração. Com você, tudo parece mais bonito, mais cheio de vida. Esse site é uma pequena forma de expressar tudo o que sinto por você, mas as palavras nunca vão ser suficientes para descrever o quanto você é especial para mim. Obrigado por ser a luz da minha vida, a razão de tantos momentos felizes e por me fazer sentir amado todos os dias. Te amo, para sempre.</p>
+
+    <div class="galeria">
+        <div class="foto"><img src="foto1.jpeg" alt="Imagem 1"></div>
+        <div class="foto"><img src="foto2.jpeg" alt="Imagem 2"></div>
+        <div class="foto"><img src="foto3.jpeg" alt="Imagem 3"></div>
+        <div class="foto"><img src="foto4.jpeg" alt="Imagem 4"></div>
+        <div class="foto"><img src="foto5.jpeg" alt="Imagem 5"></div>
+    </div>
+
+</body>
+</html>
